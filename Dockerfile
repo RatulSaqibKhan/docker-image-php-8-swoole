@@ -1,10 +1,10 @@
-ARG PHP_VERSION=8.0.6
+ARG PHP_VERSION=8.1.12
 ARG PHP_IMAGE_TYPE=cli
 
 FROM php:${PHP_VERSION}-${PHP_IMAGE_TYPE}
 
 ARG APT_DEPENDENCIES="libcurl4-openssl-dev libzip-dev libicu-dev uuid-dev zlib1g-dev libpng-dev"
-ARG PHP_DOCKER_EXTENSIONS="bcmath exif fileinfo gd gettext intl pdo pcntl sockets tokenizer zip curl"
+ARG PHP_DOCKER_EXTENSIONS="bcmath exif fileinfo gd gettext intl pdo pcntl sockets zip curl"
 ARG PHP_PECL_EXTENSIONS="redis uuid pcov msgpack igbinary openswoole"
 
 RUN echo "--- Install Dependencies ---" \
