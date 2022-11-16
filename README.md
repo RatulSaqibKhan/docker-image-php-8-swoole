@@ -2,5 +2,5 @@
 
 ## Instruction
 ```
-  docker build {custom_image_name} .
+  docker build -t {custom_image_name} .
 ```
