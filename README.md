@@ -1,5 +1,8 @@
 # Docker Image for PHP 8 with Swoole
 
+## Features
+  1. PHP 8.0
+  2. PHP OpenSwoole
 ## Instruction
 ```
   docker build -t php8-swoole .
