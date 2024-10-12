@@ -41,7 +41,7 @@ RUN echo "--- Installing Composer ---" \
     && chmod -R ugo+w ${COMPOSER_HOME} \
     && chmod -R g+s ${COMPOSER_HOME} \
     && chmod ugo+x /usr/local/bin/composer \
-    && composer --version
+    && composer --version 
 
 COPY .config/php.ini /usr/local/etc/php/conf.d/app-php.ini
 
