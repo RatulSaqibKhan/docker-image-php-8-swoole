@@ -1,4 +1,4 @@
-ARG PHP_VERSION=8.2.24
+ARG PHP_VERSION=8.1.12
 ARG PHP_IMAGE_TYPE=cli
 
 FROM php:${PHP_VERSION}-${PHP_IMAGE_TYPE}
@@ -41,7 +41,7 @@ RUN echo "--- Installing Composer ---" \
     && chmod -R ugo+w ${COMPOSER_HOME} \
     && chmod -R g+s ${COMPOSER_HOME} \
     && chmod ugo+x /usr/local/bin/composer \
-    && composer --version 
+    && composer --version
 
 COPY .config/php.ini /usr/local/etc/php/conf.d/app-php.ini
 
