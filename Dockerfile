@@ -15,7 +15,7 @@ ARG PHP_PECL_EXTENSIONS="redis uuid pcov msgpack igbinary"
 ARG COMPOSER_HOME="/var/www/.composer"
 ARG COMPOSER_VERSION="2.4.4"
 
-ENV DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 
 RUN echo "--- Install Dependencies ---" \
     && apt-get update \

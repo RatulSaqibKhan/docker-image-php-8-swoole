@@ -5,7 +5,7 @@
   2. PHP OpenSwoole
 ## Instruction
 ```
-  docker build -t php8.2-swoole .
+  docker build -t php8-swoole .
 ```
 
 ## [Find in Docker Hub](https://hub.docker.com/r/ratulsaqibkhan/php8-swoole)
